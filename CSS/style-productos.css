@@ -1,0 +1,48 @@
+header{
+    background-color: #3498DB;
+}
+.logo img{
+    width: 200px;
+    border-radius: 100px;
+}
+.buttons{
+    justify-content: space-evenly;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu :hover{
+    color: white;
+    transform: scale(1.10);
+}
+.login button{
+    background: none;
+    border: none;
+}
+.login{
+    position: relative;
+    right: -1700px;
+    top: -15px;
+}
+.login img{
+    width: 35px;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: -12px;
+    font-size: 15px;
+}
+.login :hover{
+    color: white;
+    font-size: 17px;
+}
