@@ -1,0 +1,115 @@
+header {
+    background-color: #3498db;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .buttons {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .menu :hover {
+    color: white;
+    transform: scale(1.1);
+  }
+  .login button {
+    background: none;
+    border: none;
+  }
+  .login {
+    position: relative;
+    right: -1700px;
+    top: -15px;
+  }
+  .login img {
+    width: 35px;
+  }
+  .login a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: -12px;
+    font-size: 15px;
+  }
+  .login :hover {
+    color: white;
+    font-size: 17px;
+  }
+  main {
+    background-image: url(../img/background.png);
+    padding: 100px;
+  }
+.tarjetas{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.cards{
+    background-color: gray;
+    border-radius: 10px;
+}
+.tarjetas .card-content{
+    border: 2px solid;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.tarjetas .price{
+    color: #79caf8;
+}
+.card-content img{
+    width: 150px; height: 150px;
+}
+.tarjetas :hover{
+    color: white;
+}
+.most-sold{
+    text-align: center;
+    padding: 10px;
+}
+.most-sold img{
+    width: 300px;
+    position: relative;
+    right: 150px;
+}
+.most-sold button{
+    background-color: #A9CCE3;
+    border-radius: 14px;
+    padding: 7px;
+    border: none;
+    position: relative;
+    left: 50px;
+    bottom: 150px;
+}
+.most-sold h1{
+color: white;
+}
+.most-sold p{
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+    color: white;
+}
+.most-sold a{
+    text-decoration: none;
+    color: white;
+}
+.button :hover{
+    background-color: #b4cad8;
+}
+  footer {
+    background-color: #3498db;
+    text-align: center;
+    padding: 30px;
+  }
+  

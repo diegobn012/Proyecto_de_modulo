@@ -1,9 +1,12 @@
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 header {
   background-color: #3498db;
 }
 .logo img {
   width: 200px;
-  border-radius: 100px;
 }
 .buttons {
   justify-content: space-evenly;
@@ -30,7 +33,7 @@ header {
 .login {
   position: relative;
   right: -1700px;
-  top: -15px;
+  top: -15px;  
 }
 .login img {
   width: 35px;
@@ -56,6 +59,7 @@ main {
 .card-border {
   border: white 10px;
   padding: 150px;
+  flex-wrap: wrap;
 }
 .tarjetas-1 {
   display: flex;
@@ -78,19 +82,47 @@ main {
   width: 300px;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid black;
+  border: 3px solid black;
   background-color: #9d9d9d;
 }
 .cards img {
   width: 260px;
 }
+.tarjetas-1 .price{
+  color: #79caf8;
+}
+.tarjetas-2 .price{
+  color: #79caf8;
+}
+.tarjetas-3 .price{
+  color: #79caf8;
+}
+.tarjetas-4 .price{
+  color: #79caf8;
+}
 .cards .footer {
   text-align: center;
   padding: 25px;
 }
-.cards :hover {
+.tarjetas-1 :hover {
   scale: (1.05);
   color: white;
+  border-color: white;
+}
+.tarjetas-2 :hover {
+  scale: (1.05);
+  color: white;
+  border-color: white;
+}
+.tarjetas-3 :hover {
+  scale: (1.05);
+  color: white;
+  border-color: white;
+}
+.tarjetas-4 :hover {
+  scale: (1.05);
+  color: white;
+  border-color: white;
 }
 .footer button {
   color: black;
@@ -103,4 +135,9 @@ main {
 }
 .card-content {
   padding: 20px;
+}
+footer{
+  padding: 30px;
+  text-align: center;
+  background-color: #3498db;
 }
