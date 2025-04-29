@@ -1,115 +1,129 @@
 header {
-    background-color: #3498db;
-  }
-  .logo img {
-    width: 200px;
-  }
-  .buttons {
-    justify-content: space-evenly;
-    text-align: center;
-  }
-  .menu {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-  }
-  .menu a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  .menu :hover {
-    color: white;
-    transform: scale(1.1);
-  }
-  .login button {
-    background: none;
-    border: none;
-  }
-  .login {
-    position: relative;
-    right: -1700px;
-    top: -15px;
-  }
-  .login img {
-    width: 35px;
-  }
-  .login a {
-    text-decoration: none;
-    color: black;
-    position: relative;
-    top: -12px;
-    font-size: 15px;
-  }
-  .login :hover {
-    color: white;
-    font-size: 17px;
-  }
-  main {
-    background-image: url(../img/background.png);
-    padding: 100px;
-  }
-.tarjetas{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+  background-color: #3498db;
 }
+.logo img {
+  width: 200px;
+}
+.buttons {
+  justify-content: space-evenly;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.menu :hover {
+  color: white;
+  transform: scale(1.1);
+}
+.login button {
+  background: none;
+  border: none;
+}
+.login {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.login img {
+  width: 35px;
+}
+.login a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: -12px;
+  font-size: 15px;
+}
+.login :hover {
+  color: white;
+  font-size: 17px;
+}
+main {
+  background-image: url(../img/background.png);
+  padding: 100px;
+}
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 .cards{
-    background-color: gray;
-    border-radius: 10px;
+  background-color: gray;
+  border-radius: 10px;
 }
-.tarjetas .card-content{
-    border: 2px solid;
-    width: 200px;
-    padding: 20px;
-    border-radius: 10px;
+.tarjetas .card-content {
+width: 100%;
+max-width: 250px;
+margin: auto;
 }
 .tarjetas .price{
-    color: #79caf8;
+  color: #79caf8;
 }
-.card-content img{
-    width: 150px; height: 150px;
+.card-content img {
+width: 100%;
+height: auto;
+display: block;
+margin: auto;
 }
 .tarjetas :hover{
-    color: white;
+  color: white;
 }
-.most-sold{
-    text-align: center;
-    padding: 10px;
+.most-sold {
+text-align: center;
+padding: 20px;
 }
-.most-sold img{
-    width: 300px;
-    position: relative;
-    right: 150px;
+
+.most-sold img {
+width: 100%;
+max-width: 300px;
+height: auto;
 }
-.most-sold button{
-    background-color: #A9CCE3;
-    border-radius: 14px;
-    padding: 7px;
-    border: none;
-    position: relative;
-    left: 50px;
-    bottom: 150px;
+
+.most-sold button {
+background-color: #A9CCE3;
+border-radius: 14px;
+padding: 7px 20px;
+border: none;
+margin-top: 10px;
 }
-.most-sold h1{
+
+.most-sold h1,
+.most-sold p {
 color: white;
+margin: 10px 0;
 }
-.most-sold p{
-    position: relative;
-    left: 200px;
-    bottom: 150px;
-    color: white;
+
+
+@media screen and (max-width: 768px) {
+main {
+  padding: 20px;
 }
-.most-sold a{
-    text-decoration: none;
-    color: white;
+
+.login {
+  position: static;
+  text-align: center;
+  margin-top: 10px;
 }
-.button :hover{
-    background-color: #b4cad8;
+
+.menu {
+  flex-direction: column;
+  gap: 10px;
 }
-  footer {
-    background-color: #3498db;
-    text-align: center;
-    padding: 30px;
-  }
-  
+
+.most-sold img,
+.most-sold button,
+.most-sold p {
+  position: static !important;
+}
+}

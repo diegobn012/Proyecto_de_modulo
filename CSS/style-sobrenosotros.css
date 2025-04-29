@@ -1,5 +1,11 @@
 header {
   background-color: #3498db;
+  position: relative; /*si no da problemas perrito*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 main {
   background-image: url(../img/background.png);
@@ -36,9 +42,12 @@ main p {
   border: none;
 }
 .login {
-  position: relative;
-  right: -1700px;
-  top: -15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .login img {
   width: 35px;
@@ -56,16 +65,19 @@ main p {
 }
 .contenedor {
   display: flex;
-  align-items: center;
-}
-.complejo {
-  width: 200px;
-  padding: 30px;
-  margin: 50px;
-  border-radius: 5%;
-  background-color: #A9CCE3;
-  text-align: left;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.complejo {
+  background-color: #A9CCE3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
 }
 
 h4 {
@@ -80,4 +92,77 @@ footer {
 .border{
   border: solid 3px;
   padding: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .complejo {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu a {
+    display: block;
+    font-size: 18px;
+  }
+
+  .login {
+    position: static;
+    margin: 10px auto;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .complejo {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
 }

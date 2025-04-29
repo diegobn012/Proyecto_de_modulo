@@ -1,43 +1,59 @@
-body{
+body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #3498db;
+  flex-wrap: wrap;
 }
+
 .logo img {
   width: 200px;
 }
+
 .buttons {
   justify-content: space-evenly;
   text-align: center;
 }
+
 .menu {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  gap: 15px;
 }
+
 .menu a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+  transition: all 0.3s ease;
 }
-.menu :hover {
+
+.menu a:hover {
   color: white;
   transform: scale(1.1);
 }
+
+.login {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 .login button {
   background: none;
   border: none;
 }
-.login {
-  position: relative;
-  right: -1700px;
-  top: -15px;  
-}
+
 .login img {
   width: 35px;
 }
+
 .login a {
   text-decoration: none;
   color: black;
@@ -45,38 +61,37 @@ header {
   top: -12px;
   font-size: 15px;
 }
-.login :hover {
+
+.login a:hover {
   color: white;
   font-size: 17px;
 }
+
+main {
+  background-image: url(../img/background.png);
+}
+
 main h2 {
   text-align: center;
   color: white;
 }
-main {
-  background-image: url(../img/background.png);
-}
+
 .card-border {
-  border: white 10px;
+  border: 10px solid white;
   padding: 150px;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-.tarjetas-1 {
+
+.tarjetas {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.tarjetas-2 {
-  display: flex;
-  justify-content: center;
-}
-.tarjetas-3 {
-  display: flex;
-  justify-content: center;
-}
-.tarjetas-4 {
-  display: flex;
-  justify-content: center;
-}
+
 .cards {
   margin: 20px;
   width: 300px;
@@ -84,60 +99,87 @@ main {
   overflow: hidden;
   border: 3px solid black;
   background-color: #9d9d9d;
+  transition: transform 0.3s, border-color 0.3s, color 0.3s;
 }
+
+.cards:hover {
+  transform: scale(1.05);
+  border-color: white;
+  color: white;
+}
+
 .cards img {
-  width: 260px;
+  width: 100%;
 }
-.tarjetas-1 .price{
+
+.cards .price {
   color: #79caf8;
 }
-.tarjetas-2 .price{
-  color: #79caf8;
-}
-.tarjetas-3 .price{
-  color: #79caf8;
-}
-.tarjetas-4 .price{
-  color: #79caf8;
-}
+
 .cards .footer {
   text-align: center;
   padding: 25px;
 }
-.tarjetas-1 :hover {
-  scale: (1.05);
-  color: white;
-  border-color: white;
-}
-.tarjetas-2 :hover {
-  scale: (1.05);
-  color: white;
-  border-color: white;
-}
-.tarjetas-3 :hover {
-  scale: (1.05);
-  color: white;
-  border-color: white;
-}
-.tarjetas-4 :hover {
-  scale: (1.05);
-  color: white;
-  border-color: white;
-}
+
 .footer button {
   color: black;
   border-radius: 5px;
   padding: 5px;
 }
+
 .footer a {
   text-decoration: none;
   color: black;
 }
+
 .card-content {
   padding: 20px;
 }
-footer{
+
+footer {
   padding: 30px;
   text-align: center;
   background-color: #3498db;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .card-border {
+    padding: 50px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .login {
+    position: static;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .card-border {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    width: 90%;
+  }
 }
